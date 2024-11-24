@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Academia LDA</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      // Função para alternar entre as telas
+      function switchTab(tabId) {
+        const sections = document.querySelectorAll("section");
+        sections.forEach((section) => {
+          section.classList.add("hidden");
+        });
+        document.getElementById(tabId).classList.remove("hidden");
+      }
+    </script>
+  </head>
+  <body class="bg-gray-100 text-gray-800">
+    <!-- Header -->
+    <header class="bg-blue-600 py-4 text-white">
+      <div class="container mx-auto flex items-center justify-between px-4">
+        <h1 class="text-2xl font-bold">Academia LDA</h1>
+        <form class="flex items-center space-x-2">
+          <input type="text" placeholder="O que você precisa?" class="rounded-lg px-4 py-2 text-gray-700 focus:outline-none" />
+          <button type="submit" class="rounded-lg bg-white px-4 py-2 font-semibold text-blue-600 hover:bg-gray-200">Buscar</button>
+        </form>
+        <nav>
+          <ul class="flex space-x-4">
+            <li><a href="#" onclick="switchTab('unidades')" class="hover:underline">Unidades</a></li>
+            <li><a href="#" onclick="switchTab('planos')" class="hover:underline">Planos</a></li>
+            <li><a href="#" onclick="switchTab('mais')" class="hover:underline">Mais</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Unidades Section -->
+    <section id="unidades" class="container mx-auto px-4 py-10">
+      <div class="mb-10 flex space-x-4">
+        <a href="#" class="text-blue-600 hover:underline">Página Inicial</a>
+        <a href="#" class="text-blue-600 hover:underline">Login</a>
+        <a href="#" class="text-blue-600 hover:underline">Cadastrar</a>
+      </div>
+      <h3 class="mb-6 text-2xl font-bold">Cadastrar</h3>
+      <form class="rounded-lg bg-white p-6 shadow-md">
+        <!-- E-mail -->
+        <div class="mb-4">
+          <label for="email" class="mb-2 block font-semibold text-gray-700">E-mail</label>
+          <input type="email" id="email" placeholder="Digite seu e-mail" class="w-full rounded-lg border px-4 py-2 focus:outline-none" />
+        </div>
+        <!-- Senha -->
+        <div class="mb-4">
+          <label for="password" class="mb-2 block font-semibold text-gray-700">Senha</label>
+          <input type="password" id="password" placeholder="Digite sua senha" class="w-full rounded-lg border px-4 py-2 focus:outline-none" />
+        </div>
+        <!-- Confirmar Senha -->
+        <div class="mb-4">
+          <label for="confirm-password" class="mb-2 block font-semibold text-gray-700">Confirmar Senha</label>
+          <input type="password" id="confirm-password" placeholder="Confirme sua senha" class="w-full rounded-lg border px-4 py-2 focus:outline-none" />
+        </div>
+        <!-- Endereço -->
+        <div class="mb-4">
+          <label for="address" class="mb-2 block font-semibold text-gray-700">Endereço</label>
+          <input type="text" id="address" placeholder="Digite seu endereço" class="w-full rounded-lg border px-4 py-2 focus:outline-none" />
+        </div>
+        <!-- Endereço 2 -->
+        <div class="mb-4">
+          <label for="address2" class="mb-2 block font-semibold text-gray-700">Complemento</label>
+          <input type="text" id="address2" placeholder="Apartamento, Casa 2, Sem numero, ..." class="w-full rounded-lg border px-4 py-2 focus:outline-none" />
+        </div>
+        <!-- Cidade -->
+        <div class="mb-4">
+          <label for="city" class="mb-2 block font-semibold text-gray-700">Cidade</label>
+          <input type="text" id="city" placeholder="Digite sua cidade" class="w-full rounded-lg border px-4 py-2 focus:outline-none" />
+        </div>
+        <!-- Estado -->
+        <div class="mb-4">
+          <label for="state" class="mb-2 block font-semibold text-gray-700">Estado</label>
+          <select id="state" class="w-full rounded-lg border px-4 py-2 focus:outline-none">
+            <option>Selecione seu estado</option>
+            <option>AC</option>
+            <option>AL</option>
+            <option>AP</option>
+            <option>AM</option>
+            <option>BA</option>
+            <option>CE</option>
+            <option>DF</option>
+            <option>ES</option>
+            <option>GO</option>
+            <option>MA</option>
+            <option>MT</option>
+            <option>MS</option>
+            <option>MG</option>
+            <option>PA</option>
+            <option>PB</option>
+            <option>PR</option>
+            <option>PE</option>
+            <option>PI</option>
+            <option>RJ</option>
+            <option>RN</option>
+            <option>RS</option>
+            <option>RO</option>
+            <option>RR</option>
+            <option>SC</option>
+            <option>SP</option>
+            <option>SE</option>
+            <option>TO</option>
+          </select>
+        </div>
+        <!-- CEP -->
+        <div class="mb-4">
+          <label for="cep" class="mb-2 block font-semibold text-gray-700">CEP</label>
+          <input type="text" id="cep" placeholder="Digite seu CEP" class="w-full rounded-lg border px-4 py-2 focus:outline-none" />
+        </div>
+        <!-- Checkbox -->
+        <div class="mb-4">
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox" />
+            <span class="ml-2">Lembre-me dos dados</span>
+          </label>
+        </div>
+        <div class="mb-6">
+          <label class="inline-flex items-center">
+            <input type="checkbox" class="form-checkbox" />
+            <span class="ml-2">Li e Concordo com os Termos de Segurança</span>
+          </label>
+        </div>
+        <!-- Submit -->
+        <button type="submit" class="w-full rounded-lg bg-blue-600 px-4 py-2 font-semibold text-white hover:bg-blue-700">Cadastrar</button>
+      </form>
+    </section>
+
+    <!-- Planos Section -->
+    <section id="planos" class="container mx-auto hidden px-4 py-10">
+      <h2 class="mb-6 text-3xl font-bold">Planos</h2>
+      <p class="text-gray-700">Nada por aqui ainda!</p>
+    </section>
+
+    <!-- Mais Section -->
+    <section id="mais" class="container mx-auto hidden px-4 py-10">
+      <h2 class="mb-6 text-3xl font-bold">Mais</h2>
+      <ul class="list-disc pl-5 text-gray-700">
+        <li>Serviços</li>
+        <li>Ajuda</li>
+        <li>Sobre a LDA</li>
+      </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 py-4 text-center text-white">&copy; 2024 Academia LDA. Todos os direitos reservados.</footer>
+  </body>
+</html>
