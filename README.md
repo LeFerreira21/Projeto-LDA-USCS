@@ -1,8 +1,6 @@
 # Projeto-LDA-USCS
 
-# Descrição para o repositório
-
-**Título:** Eficiência na estilização: Uma comparação entre Bootstrap e Tailwind CSS
+**Título:** Eficiência em estilização HTML: Uma comparação entre Bootstrap e Tailwind CSS
 
 **Descrição:**  
 Este repositório contém o código-fonte de dois sites com o mesmo design, implementados separadamente utilizando os frameworks **Bootstrap** e **Tailwind CSS**.  
