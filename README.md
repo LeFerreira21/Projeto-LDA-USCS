@@ -2,7 +2,7 @@
 
 # Descrição para o repositório
 
-**Título:** EFICIÊNCIA NA ESTILIZAÇÃO: UMA COMPARAÇÃO ENTRE BOOTSTRAP E TAILWIND CSS
+**Título:** Eficiência na estilização: Uma comparação entre Bootstrap e Tailwind CSS
 
 **Descrição:**  
 Este repositório contém o código-fonte de dois sites com o mesmo design, implementados separadamente utilizando os frameworks **Bootstrap** e **Tailwind CSS**.  
